@@ -1,6 +1,6 @@
-import Cookie from "js-cookie"
+import Cookie from 'js-cookie'
 const TokenName: string = 'Admin-Token'
 
-export function getToken() {
+export function getToken () {
   return Cookie.get(TokenName)
 }

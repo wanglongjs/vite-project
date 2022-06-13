@@ -1,8 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
+import Router from './router'
+// import { store, key } from './store'
+import 'element-plus/theme-chalk/index.css';
+import { createPinia } from 'pinia'
+import 'styles/index.scss'
+import '@/permission'
 const app = createApp(App)
-const a = 3
-console.log(123)
-app.use(router)
+app.use(Router)
+app.use(createPinia())
 app.mount('#app')
